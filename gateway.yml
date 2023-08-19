@@ -19,7 +19,7 @@ spring:
           predicates:
             - Path=/movies/**
           filters:
-            - RewritePath=/api/v1/movies/(?<remaining>.*), /$\{remaining}
+            - PrefixPath=/api/v1
 
 eureka:
   client:
