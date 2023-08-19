@@ -10,13 +10,14 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: catalogoServiceRoute
+        - id: catalogServiceRoute
           uri: lb://catalog-service/
           predicates:
             - Path=/catalog/**
-          filters:
-            - AddRequestHeader=user-request-header, custom-user-request-header
-            - AddResponseHeader=user-response-header, custom-user-response-header
+        - id: movieServiceRoute
+          uri: lb://movie-service/
+          predicates:
+            - Path=/movie/**
 
 eureka:
   client:
@@ -37,9 +38,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: info,health
-        
-
-
-  
-message: Movies configuration server is alive for DEV!   
+        include: info, health
