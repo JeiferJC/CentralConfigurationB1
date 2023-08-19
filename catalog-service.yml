@@ -23,9 +23,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: info,health
-        
-
-
-  
-message: Movies configuration server is alive for DEV!   
+        include: info, health 

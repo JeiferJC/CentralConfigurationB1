@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: movies-service
+    name: movie-service
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3370/movie-dev
@@ -28,9 +28,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: info,health
-        
-
-
-  
-message: Movies configuration server is alive for DEV!   
+        include: info, health 
