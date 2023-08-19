@@ -17,7 +17,7 @@ spring:
         - id: movieServiceRoute
           uri: lb://movie-service/
           predicates:
-            - Path=/movie/**
+            - Path=/api/v1/movies/**
 
 eureka:
   client:
