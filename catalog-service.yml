@@ -25,4 +25,4 @@ management:
       exposure:
         include: info, health 
 services:
-  movie: MOVIE-SERVICE
+  movie: MOVIE-SERVICE/api/v1/movies
