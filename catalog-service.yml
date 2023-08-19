@@ -24,3 +24,5 @@ management:
     web:
       exposure:
         include: info, health 
+services:
+  movie: MOVIE-SERVICE
