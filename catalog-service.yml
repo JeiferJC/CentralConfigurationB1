@@ -1,5 +1,7 @@
 server:
-  port: ${PORT:${SERVER_PORT:8082}}
+  port: ${PORT:${SERVER_PORT:0}}
+  error:
+    include-message: always
 
 spring:
   mongodb:
