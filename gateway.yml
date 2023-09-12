@@ -15,20 +15,6 @@ spring:
           uri: lb://catalog-service/
           predicates:
             - Path=/catalog/**
-        - id: movieServiceRoute
-          uri: lb://movie-service/
-          predicates:
-            - Path=/movies/**
-          filters:
-            - PrefixPath=/api/v1
-        - id: serieServiceRoute
-          uri: lb://serie-service/
-          predicates:
-            - Path=/series/**
-          filters:
-            - PrefixPath=/api/v1
-
-
 eureka:
   client:
     register-with-eureka: true
