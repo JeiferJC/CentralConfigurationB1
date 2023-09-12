@@ -16,9 +16,6 @@ spring:
   zipkin: 
     base-url: http://localhost:9411/
     enable: true
-  cloud:
-    client:
-      hostname: localhost
 
 eureka:
   client:
