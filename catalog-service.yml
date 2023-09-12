@@ -31,9 +31,6 @@ eureka:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 20
 
-services:
-  movie: MOVIE-SERVICE/api/v1/movies
-
 management:
   endpoints:
     web:
