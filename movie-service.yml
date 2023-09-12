@@ -10,8 +10,8 @@ spring:
     username: usr-movie
     password: pwd-movie
   jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
-      dialect: org.hibernate.dialect.MySQLDialect
       ddl-auto: update
     generate-ddl: true
     show-sql: true
