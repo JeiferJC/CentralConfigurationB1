@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: gateway
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      skipPattern: (^cleanup.*|.+favicon.*)
   cloud:
     gateway:
       discovery:
@@ -35,5 +40,3 @@ management:
     web:
       exposure:
         include: info, health
-
-logging.level.org.springframework.web.servlet.DispatcherServlet: DEBUG
